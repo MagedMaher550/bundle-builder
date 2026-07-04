@@ -9,31 +9,35 @@ export interface Pricing {
     originalPrice?: number;
 }
 
-export interface Product {
+export type SecurityDeviceCategory =
+    | "camera"
+    | "sensor"
+    | "protection";
+
+interface BaseCatalogItem {
     id: string;
-    categoryId: string;
 
     name: string;
     description: string;
 
-    image: string;
-
     pricing: Pricing;
-
-    variants?: Variant[];
 
     badge?: string;
 }
 
-export interface Category {
-    id: string;
+export interface SecurityDevice extends BaseCatalogItem {
+    category: SecurityDeviceCategory;
 
-    title: string;
+    image: string;
 
-    order: number;
+    variants?: Variant[];
+}
+
+export interface SubscriptionPlan extends BaseCatalogItem {
+    features: string[];
 }
 
 export interface Catalog {
-    categories: Category[];
-    products: Product[];
+    devices: SecurityDevice[];
+    plans: SubscriptionPlan[];
 }

@@ -1,3 +1,5 @@
 import catalog from "./catalog.json";
 
-export default catalog;
+import type { Catalog } from "@/types";
+
+export default catalog as Catalog;

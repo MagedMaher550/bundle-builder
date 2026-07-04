@@ -1,181 +1,175 @@
 {
-  "categories": [
+  "devices": [
     {
-      "id": "cameras",
-      "title": "Choose your cameras",
-      "order": 1
-    },
-    {
-      "id": "plan",
-      "title": "Choose your plan",
-      "order": 2
-    },
-    {
-      "id": "sensors",
-      "title": "Choose your sensors",
-      "order": 3
-    },
-    {
-      "id": "protection",
-      "title": "Add extra protection",
-      "order": 4
-    }
-  ],
-  "products": [
-    {
-      "id": "wyze-cam",
-      "categoryId": "cameras",
-      "name": "Wyze Cam",
-      "description": "Indoor security camera with color night vision.",
-      "image": "/images/products/wyze-cam.png",
+      "id": "indoor-cam-360",
+      "name": "Indoor Camera 360°",
+      "description": "Pan-tilt-zoom indoor security camera with 1080p HD video and two-way audio. Perfect for monitoring your home while you're away.",
       "pricing": {
-        "currentPrice": 25.98,
-        "originalPrice": 33.98
+        "currentPrice": 99.99,
+        "originalPrice": 129.99
       },
-      "badge": "Save 22%",
+      "badge": "Best Seller",
+      "category": "camera",
+      "image": "/images/devices/indoor-cam-360.jpg",
       "variants": [
         {
-          "id": "white",
+          "id": "indoor-cam-360-white",
           "title": "White",
-          "image": "/images/variants/white.png"
+          "image": "/images/devices/indoor-cam-360-white.jpg"
         },
         {
-          "id": "black",
+          "id": "indoor-cam-360-black",
           "title": "Black",
-          "image": "/images/variants/black.png"
+          "image": "/images/devices/indoor-cam-360-black.jpg"
         }
       ]
     },
     {
-      "id": "wyze-cam-pan-v3",
-      "categoryId": "cameras",
-      "name": "Wyze Cam Pan v3",
-      "description": "360° pan and tilt smart security camera.",
-      "image": "/images/products/wyze-cam-pan-v3.png",
+      "id": "doorbell-cam-pro",
+      "name": "Video Doorbell Pro",
+      "description": "Smart video doorbell with 4K resolution, night vision, and motion detection. Get alerts when packages are delivered or visitors arrive.",
       "pricing": {
-        "currentPrice": 39.98,
-        "originalPrice": 49.98
+        "currentPrice": 149.99
       },
-      "badge": "Save 20%",
+      "badge": "New",
+      "category": "camera",
+      "image": "/images/devices/doorbell-cam-pro.jpg",
       "variants": [
         {
-          "id": "white",
-          "title": "White",
-          "image": "/images/variants/white.png"
+          "id": "doorbell-cam-pro-silver",
+          "title": "Silver",
+          "image": "/images/devices/doorbell-cam-pro-silver.jpg"
         },
         {
-          "id": "black",
-          "title": "Black",
-          "image": "/images/variants/black.png"
+          "id": "doorbell-cam-pro-bronze",
+          "title": "Bronze",
+          "image": "/images/devices/doorbell-cam-pro-bronze.jpg"
         }
       ]
     },
     {
-      "id": "wyze-cam-floodlight-v2",
-      "categoryId": "cameras",
-      "name": "Wyze Cam Floodlight v2",
-      "description": "Outdoor camera with integrated floodlights.",
-      "image": "/images/products/wyze-cam-floodlight-v2.png",
+      "id": "outdoor-cam-4k",
+      "name": "Outdoor Security Camera 4K",
+      "description": "Weatherproof outdoor camera with 4K ultra HD resolution, color night vision, and AI-powered motion detection for cars, people, and animals.",
       "pricing": {
-        "currentPrice": 89.98,
-        "originalPrice": 99.98
+        "currentPrice": 199.99,
+        "originalPrice": 249.99
       },
-      "badge": "Save 10%"
+      "badge": "Premium",
+      "category": "camera",
+      "image": "/images/devices/outdoor-cam-4k.jpg"
     },
     {
-      "id": "wyze-cam-outdoor",
-      "categoryId": "cameras",
-      "name": "Wyze Cam Outdoor",
-      "description": "Wire-free outdoor security camera.",
-      "image": "/images/products/wyze-cam-outdoor.png",
+      "id": "floodlight-cam",
+      "name": "Floodlight Security Camera",
+      "description": "Combines a 2K HD security camera with 2000-lumen LED floodlights and a built-in siren. Deters potential intruders and illuminates your property.",
       "pricing": {
-        "currentPrice": 59.98,
-        "originalPrice": 69.98
-      }
+        "currentPrice": 179.99
+      },
+      "category": "camera",
+      "image": "/images/devices/floodlight-cam.jpg"
     },
-    {
-      "id": "wyze-battery-cam-pro",
-      "categoryId": "cameras",
-      "name": "Wyze Battery Cam Pro",
-      "description": "Battery-powered 2K outdoor security camera.",
-      "image": "/images/products/wyze-battery-cam-pro.png",
-      "pricing": {
-        "currentPrice": 79.98,
-        "originalPrice": 99.98
-      }
-    },
-
-    {
-      "id": "cam-plus",
-      "categoryId": "plan",
-      "name": "Cam Plus",
-      "description": "Unlimited event video cloud recording.",
-      "image": "/images/products/cam-plus.png",
-      "pricing": {
-        "currentPrice": 2.99
-      }
-    },
-    {
-      "id": "cam-unlimited",
-      "categoryId": "plan",
-      "name": "Cam Unlimited",
-      "description": "Cloud recording for all your cameras.",
-      "image": "/images/products/cam-unlimited.png",
-      "pricing": {
-        "currentPrice": 9.99
-      }
-    },
-
     {
       "id": "motion-sensor",
-      "categoryId": "sensors",
       "name": "Motion Sensor",
-      "description": "Detects movement inside your home.",
-      "image": "/images/products/motion-sensor.png",
+      "description": "Detects movement up to 40 feet away with a 110° field of view. Wireless and battery-powered with a 2-year battery life.",
+      "pricing": {
+        "currentPrice": 39.99,
+        "originalPrice": 49.99
+      },
+      "category": "sensor",
+      "image": "/images/devices/motion-sensor.jpg"
+    },
+    {
+      "id": "contact-sensor",
+      "name": "Entry Contact Sensor",
+      "description": "Monitor doors and windows with this wireless magnetic sensor. Instantly alerts you when a door or window is opened.",
+      "pricing": {
+        "currentPrice": 29.99
+      },
+      "badge": "Sale",
+      "category": "sensor",
+      "image": "/images/devices/contact-sensor.jpg"
+    },
+    {
+      "id": "glass-break-sensor",
+      "name": "Glass Break Sensor",
+      "description": "Detects the sound frequency of breaking glass up to 25 feet away. Provides an additional layer of protection for your home.",
+      "pricing": {
+        "currentPrice": 34.99
+      },
+      "category": "sensor",
+      "image": "/images/devices/glass-break-sensor.jpg"
+    },
+    {
+      "id": "water-leak-sensor",
+      "name": "Water Leak Sensor",
+      "description": "Early detection of water leaks, flooding, or temperature changes. Place near sinks, water heaters, or basement areas.",
+      "pricing": {
+        "currentPrice": 24.99
+      },
+      "category": "sensor",
+      "image": "/images/devices/water-leak-sensor.jpg"
+    },
+    {
+      "id": "smoke-co-detector",
+      "name": "Smoke & CO Detector",
+      "description": "Smart smoke and carbon monoxide detector with self-testing capabilities. Features a built-in siren and mobile alerts.",
+      "pricing": {
+        "currentPrice": 69.99,
+        "originalPrice": 89.99
+      },
+      "badge": "Safety Essential",
+      "category": "protection",
+      "image": "/images/devices/smoke-co-detector.jpg"
+    },
+    {
+      "id": "panic-button",
+      "name": "Panic Button",
+      "description": "Emergency panic button for medical alerts or security emergencies. Press once for silent alarm or hold for 3 seconds for full emergency response.",
+      "pricing": {
+        "currentPrice": 19.99
+      },
+      "category": "protection",
+      "image": "/images/devices/panic-button.jpg"
+    }
+  ],
+  "plans": [
+    {
+      "id": "basic-monitoring",
+      "name": "Basic Monitoring",
+      "description": "24/7 professional monitoring with police, fire, and medical dispatch. Includes mobile alerts and remote arming/disarming.",
       "pricing": {
         "currentPrice": 19.99
       }
     },
     {
-      "id": "entry-sensor",
-      "categoryId": "sensors",
-      "name": "Entry Sensor",
-      "description": "Monitors doors and windows.",
-      "image": "/images/products/entry-sensor.png",
+      "id": "video-recording-plan",
+      "name": "Video Recording Plan",
+      "description": "Store up to 30 days of video history in the cloud. Includes advanced motion detection and video clip sharing.",
       "pricing": {
-        "currentPrice": 14.99
-      }
+        "currentPrice": 9.99,
+        "originalPrice": 14.99
+      },
+      "badge": "Popular"
     },
     {
-      "id": "keypad",
-      "categoryId": "sensors",
-      "name": "Keypad",
-      "description": "Arm and disarm your security system.",
-      "image": "/images/products/keypad.png",
+      "id": "premium-protection",
+      "name": "Premium Protection",
+      "description": "All-in-one plan with professional monitoring, 60-day video storage, smart device integration, and priority emergency response.",
       "pricing": {
         "currentPrice": 29.99
-      }
-    },
-
-    {
-      "id": "professional-monitoring",
-      "categoryId": "protection",
-      "name": "Professional Monitoring",
-      "description": "24/7 emergency monitoring service.",
-      "image": "/images/products/professional-monitoring.png",
-      "pricing": {
-        "currentPrice": 9.99
-      }
+      },
+      "badge": "Best Value"
     },
     {
-      "id": "extended-warranty",
-      "categoryId": "protection",
-      "name": "Extended Warranty",
-      "description": "Extra coverage for your devices.",
-      "image": "/images/products/extended-warranty.png",
+      "id": "self-monitoring",
+      "name": "Self Monitoring",
+      "description": "Receive push notifications and control your system from anywhere. No professional monitoring fees. Ideal for DIY security.",
       "pricing": {
-        "currentPrice": 4.99
-      }
+        "currentPrice": 0.0
+      },
+      "badge": "Free"
     }
   ]
 }

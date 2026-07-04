@@ -1,12 +1,13 @@
-export interface Bundle {
-    items: BundleItem[];
-}
-
-export interface BundleItem {
-    productId: string;
+export interface DeviceSelection {
+    deviceId: string;
 
     variantId?: string;
 
     quantity: number;
 }
 
+export interface Bundle {
+    devices: DeviceSelection[];
+
+    planId?: string;
+}
