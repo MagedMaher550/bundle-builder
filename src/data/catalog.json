@@ -1,0 +1,181 @@
+{
+  "categories": [
+    {
+      "id": "cameras",
+      "title": "Choose your cameras",
+      "order": 1
+    },
+    {
+      "id": "plan",
+      "title": "Choose your plan",
+      "order": 2
+    },
+    {
+      "id": "sensors",
+      "title": "Choose your sensors",
+      "order": 3
+    },
+    {
+      "id": "protection",
+      "title": "Add extra protection",
+      "order": 4
+    }
+  ],
+  "products": [
+    {
+      "id": "wyze-cam",
+      "categoryId": "cameras",
+      "name": "Wyze Cam",
+      "description": "Indoor security camera with color night vision.",
+      "image": "/images/products/wyze-cam.png",
+      "pricing": {
+        "currentPrice": 25.98,
+        "originalPrice": 33.98
+      },
+      "badge": "Save 22%",
+      "variants": [
+        {
+          "id": "white",
+          "title": "White",
+          "image": "/images/variants/white.png"
+        },
+        {
+          "id": "black",
+          "title": "Black",
+          "image": "/images/variants/black.png"
+        }
+      ]
+    },
+    {
+      "id": "wyze-cam-pan-v3",
+      "categoryId": "cameras",
+      "name": "Wyze Cam Pan v3",
+      "description": "360° pan and tilt smart security camera.",
+      "image": "/images/products/wyze-cam-pan-v3.png",
+      "pricing": {
+        "currentPrice": 39.98,
+        "originalPrice": 49.98
+      },
+      "badge": "Save 20%",
+      "variants": [
+        {
+          "id": "white",
+          "title": "White",
+          "image": "/images/variants/white.png"
+        },
+        {
+          "id": "black",
+          "title": "Black",
+          "image": "/images/variants/black.png"
+        }
+      ]
+    },
+    {
+      "id": "wyze-cam-floodlight-v2",
+      "categoryId": "cameras",
+      "name": "Wyze Cam Floodlight v2",
+      "description": "Outdoor camera with integrated floodlights.",
+      "image": "/images/products/wyze-cam-floodlight-v2.png",
+      "pricing": {
+        "currentPrice": 89.98,
+        "originalPrice": 99.98
+      },
+      "badge": "Save 10%"
+    },
+    {
+      "id": "wyze-cam-outdoor",
+      "categoryId": "cameras",
+      "name": "Wyze Cam Outdoor",
+      "description": "Wire-free outdoor security camera.",
+      "image": "/images/products/wyze-cam-outdoor.png",
+      "pricing": {
+        "currentPrice": 59.98,
+        "originalPrice": 69.98
+      }
+    },
+    {
+      "id": "wyze-battery-cam-pro",
+      "categoryId": "cameras",
+      "name": "Wyze Battery Cam Pro",
+      "description": "Battery-powered 2K outdoor security camera.",
+      "image": "/images/products/wyze-battery-cam-pro.png",
+      "pricing": {
+        "currentPrice": 79.98,
+        "originalPrice": 99.98
+      }
+    },
+
+    {
+      "id": "cam-plus",
+      "categoryId": "plan",
+      "name": "Cam Plus",
+      "description": "Unlimited event video cloud recording.",
+      "image": "/images/products/cam-plus.png",
+      "pricing": {
+        "currentPrice": 2.99
+      }
+    },
+    {
+      "id": "cam-unlimited",
+      "categoryId": "plan",
+      "name": "Cam Unlimited",
+      "description": "Cloud recording for all your cameras.",
+      "image": "/images/products/cam-unlimited.png",
+      "pricing": {
+        "currentPrice": 9.99
+      }
+    },
+
+    {
+      "id": "motion-sensor",
+      "categoryId": "sensors",
+      "name": "Motion Sensor",
+      "description": "Detects movement inside your home.",
+      "image": "/images/products/motion-sensor.png",
+      "pricing": {
+        "currentPrice": 19.99
+      }
+    },
+    {
+      "id": "entry-sensor",
+      "categoryId": "sensors",
+      "name": "Entry Sensor",
+      "description": "Monitors doors and windows.",
+      "image": "/images/products/entry-sensor.png",
+      "pricing": {
+        "currentPrice": 14.99
+      }
+    },
+    {
+      "id": "keypad",
+      "categoryId": "sensors",
+      "name": "Keypad",
+      "description": "Arm and disarm your security system.",
+      "image": "/images/products/keypad.png",
+      "pricing": {
+        "currentPrice": 29.99
+      }
+    },
+
+    {
+      "id": "professional-monitoring",
+      "categoryId": "protection",
+      "name": "Professional Monitoring",
+      "description": "24/7 emergency monitoring service.",
+      "image": "/images/products/professional-monitoring.png",
+      "pricing": {
+        "currentPrice": 9.99
+      }
+    },
+    {
+      "id": "extended-warranty",
+      "categoryId": "protection",
+      "name": "Extended Warranty",
+      "description": "Extra coverage for your devices.",
+      "image": "/images/products/extended-warranty.png",
+      "pricing": {
+        "currentPrice": 4.99
+      }
+    }
+  ]
+}
