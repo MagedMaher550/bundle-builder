@@ -1,30 +1,25 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 
 import { BUILDER_STEPS } from "@/config/builder";
+import { useBundle } from "@/hooks/useBundle";
 
 import BuilderStep from "./builderStep";
 
 export default function BuilderAccordion() {
-  const [activeStep, setActiveStep] = useState<number>(BUILDER_STEPS[0].id);
-
-  const handleToggle = (stepId: number) => {
-    if (stepId === activeStep) return setActiveStep(-1);
-
-    setActiveStep(stepId);
-  };
+  const { currentStep, setCurrentStep } = useBundle();
 
   return (
-    <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+    <div className="overflow-hidden rounded-2xl border border-slate-200/70 bg-white shadow-[0_6px_18px_rgba(15,23,42,0.05)]">
       {BUILDER_STEPS.map((step, index) => (
         <Fragment key={step.id}>
           <BuilderStep
             step={step}
-            expanded={activeStep === step.id}
-            onToggle={() => handleToggle(step.id)}
+            expanded={currentStep === step.id}
+            onToggle={() => setCurrentStep(step.id)}
           />
 
           {index < BUILDER_STEPS.length - 1 && (
-            <div className="border-b border-slate-200" />
+            <div className="border-b border-slate-200/70" />
           )}
         </Fragment>
       ))}

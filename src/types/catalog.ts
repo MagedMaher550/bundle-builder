@@ -34,7 +34,7 @@ export interface SecurityDevice extends BaseCatalogItem {
 }
 
 export interface SubscriptionPlan extends BaseCatalogItem {
-    features: string[];
+    features?: string[];
 }
 
 export interface Catalog {

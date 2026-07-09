@@ -1,137 +1,322 @@
 {
   "devices": [
     {
-      "id": "indoor-cam-360",
-      "name": "Indoor Camera 360°",
-      "description": "Pan-tilt-zoom indoor security camera with 1080p HD video and two-way audio. Perfect for monitoring your home while you're away.",
+      "id": "wyze-battery-cam-pro",
+      "name": "Wyze Battery Cam Pro",
+      "description": "Wireless security camera with 2K resolution, color night vision, and a built-in spotlight. Battery-powered for flexible placement indoors or outdoors.",
       "pricing": {
         "currentPrice": 99.99,
         "originalPrice": 129.99
       },
-      "badge": "Best Seller",
       "category": "camera",
-      "image": "/images/devices/indoor-cam-360.jpg",
+      "image": "/images/devices/wyze-battery-cam-pro-wyze-labs-inc-white.webp",
       "variants": [
         {
-          "id": "indoor-cam-360-white",
+          "id": "wyze-battery-cam-pro-white",
           "title": "White",
-          "image": "/images/devices/indoor-cam-360-white.jpg"
+          "image": "/images/devices/wyze-battery-cam-pro-wyze-labs-inc-white.webp"
         },
         {
-          "id": "indoor-cam-360-black",
+          "id": "wyze-battery-cam-pro-black",
           "title": "Black",
-          "image": "/images/devices/indoor-cam-360-black.jpg"
+          "image": "/images/devices/wyze-battery-cam-pro-wyze-labs-inc-black.webp"
         }
       ]
     },
     {
-      "id": "doorbell-cam-pro",
-      "name": "Video Doorbell Pro",
-      "description": "Smart video doorbell with 4K resolution, night vision, and motion detection. Get alerts when packages are delivered or visitors arrive.",
+      "id": "wyze-cam-floodlight-v2",
+      "name": "Wyze Cam Floodlight v2",
+      "description": "Outdoor security camera with 2K resolution, color night vision, and 2600-lumen LED floodlights. Deters intruders with motion-activated lighting and a built-in siren.",
       "pricing": {
         "currentPrice": 149.99
       },
-      "badge": "New",
       "category": "camera",
-      "image": "/images/devices/doorbell-cam-pro.jpg",
+      "image": "/images/devices/wyze-cam-floodlight-v2-wyze-labs-white.webp",
       "variants": [
         {
-          "id": "doorbell-cam-pro-silver",
-          "title": "Silver",
-          "image": "/images/devices/doorbell-cam-pro-silver.jpg"
+          "id": "wyze-cam-floodlight-v2-black",
+          "title": "Black",
+          "image": "/images/devices/wyze-cam-floodlight-v2-wyze-labs-black.webp"
         },
         {
-          "id": "doorbell-cam-pro-bronze",
-          "title": "Bronze",
-          "image": "/images/devices/doorbell-cam-pro-bronze.jpg"
+          "id": "wyze-cam-floodlight-v2-white",
+          "title": "White",
+          "image": "/images/devices/wyze-cam-floodlight-v2-wyze-labs-white.webp"
         }
       ]
     },
     {
-      "id": "outdoor-cam-4k",
-      "name": "Outdoor Security Camera 4K",
-      "description": "Weatherproof outdoor camera with 4K ultra HD resolution, color night vision, and AI-powered motion detection for cars, people, and animals.",
+      "id": "wyze-cam-pan-v3",
+      "name": "Wyze Cam Pan v3",
+      "description": "Pan-tilt-zoom camera with 360° horizontal and 180° vertical rotation, 2K resolution, and color night vision. Track motion automatically and cover every corner.",
       "pricing": {
-        "currentPrice": 199.99,
-        "originalPrice": 249.99
-      },
-      "badge": "Premium",
-      "category": "camera",
-      "image": "/images/devices/outdoor-cam-4k.jpg"
-    },
-    {
-      "id": "floodlight-cam",
-      "name": "Floodlight Security Camera",
-      "description": "Combines a 2K HD security camera with 2000-lumen LED floodlights and a built-in siren. Deters potential intruders and illuminates your property.",
-      "pricing": {
-        "currentPrice": 179.99
+        "currentPrice": 79.99,
+        "originalPrice": 99.99
       },
       "category": "camera",
-      "image": "/images/devices/floodlight-cam.jpg"
+      "image": "/images/devices/wyze-cam-pan-v3-wyze-labs-black.webp",
+      "variants": [
+        {
+          "id": "wyze-cam-pan-v3-black",
+          "title": "Black",
+          "image": "/images/devices/wyze-cam-pan-v3-wyze-labs-black.webp"
+        },
+        {
+          "id": "wyze-cam-pan-v3-white",
+          "title": "White",
+          "image": "/images/devices/wyze-cam-pan-v3-wyze-labs-white.webp"
+        }
+      ]
     },
     {
-      "id": "motion-sensor",
-      "name": "Motion Sensor",
-      "description": "Detects movement up to 40 feet away with a 110° field of view. Wireless and battery-powered with a 2-year battery life.",
+      "id": "wyze-cam-v4",
+      "name": "Wyze Cam v4",
+      "description": "Indoor/outdoor security camera with 2K HD resolution, color night vision, motion tracking, and two-way audio. Weatherproof and versatile for any location.",
       "pricing": {
-        "currentPrice": 39.99,
-        "originalPrice": 49.99
+        "currentPrice": 59.99
+      },
+      "category": "camera",
+      "image": "/images/devices/wyze-cam-v4-white.webp",
+      "variants": [
+        {
+          "id": "wyze-cam-v4-black",
+          "title": "Black",
+          "image": "/images/devices/wyze-cam-v4-black.webp"
+        },
+        {
+          "id": "wyze-cam-v4-gray",
+          "title": "Gray",
+          "image": "/images/devices/wyze-cam-v4-gray.webp"
+        },
+        {
+          "id": "wyze-cam-v4-white",
+          "title": "White",
+          "image": "/images/devices/wyze-cam-v4-white.webp"
+        }
+      ]
+    },
+    {
+      "id": "wyze-duo-cam-battery-doorbell",
+      "name": "Wyze Duo Cam Battery Doorbell",
+      "description": "Battery-powered video doorbell with dual cameras for a full view of your front porch. 2K resolution, color night vision, and two-way audio.",
+      "pricing": {
+        "currentPrice": 139.99,
+        "originalPrice": 169.99
+      },
+      "category": "camera",
+      "image": "/images/devices/wyze-duo-cam-battery-doorbell-wyze-labs-white.webp",
+      "variants": [
+        {
+          "id": "wyze-duo-cam-battery-doorbell-white",
+          "title": "White",
+          "image": "/images/devices/wyze-duo-cam-battery-doorbell-wyze-labs-white.webp"
+        }
+      ]
+    },
+    {
+      "id": "wyze-motion-sensor",
+      "name": "Wyze Motion Sensor v2",
+      "description": "Detects movement up to 40 feet away with a 110° field of view. Wireless and battery-powered with a 2-year battery life. Perfect for triggering cameras and lights.",
+      "pricing": {
+        "currentPrice": 19.99
       },
       "category": "sensor",
-      "image": "/images/devices/motion-sensor.jpg"
+      "image": "/images/devices/wyze-sense-motion-sensor-wyze-labs-inc-white.webp",
+      "variants": [
+        {
+          "id": "wyze-motion-sensor-white",
+          "title": "White",
+          "image": "/images/devices/wyze-sense-motion-sensor-wyze-labs-inc-white.webp"
+        }
+      ]
     },
     {
-      "id": "contact-sensor",
-      "name": "Entry Contact Sensor",
-      "description": "Monitor doors and windows with this wireless magnetic sensor. Instantly alerts you when a door or window is opened.",
+      "id": "wyze-contact-sensor",
+      "name": "Wyze Entry Contact Sensor",
+      "description": "Monitor doors and windows with this wireless magnetic sensor. Instantly alerts you when a door or window is opened. Includes a mini magnet for alignment.",
       "pricing": {
-        "currentPrice": 29.99
-      },
-      "badge": "Sale",
-      "category": "sensor",
-      "image": "/images/devices/contact-sensor.jpg"
-    },
-    {
-      "id": "glass-break-sensor",
-      "name": "Glass Break Sensor",
-      "description": "Detects the sound frequency of breaking glass up to 25 feet away. Provides an additional layer of protection for your home.",
-      "pricing": {
-        "currentPrice": 34.99
+        "currentPrice": 14.99,
+        "originalPrice": 19.99
       },
       "category": "sensor",
-      "image": "/images/devices/glass-break-sensor.jpg"
+      "image": "/images/devices/wyze-sense-entry-sensor-wyze-labs-inc-white.webp",
+      "variants": [
+        {
+          "id": "wyze-contact-sensor-white",
+          "title": "White",
+          "image": "/images/devices/wyze-sense-entry-sensor-wyze-labs-inc-white.webp"
+        }
+      ]
     },
     {
-      "id": "water-leak-sensor",
-      "name": "Water Leak Sensor",
-      "description": "Early detection of water leaks, flooding, or temperature changes. Place near sinks, water heaters, or basement areas.",
+      "id": "wyze-leak-sensor",
+      "name": "Wyze Water Leak Sensor",
+      "description": "Early detection of water leaks, flooding, or temperature changes. Place near sinks, water heaters, or basement areas to prevent costly water damage.",
       "pricing": {
         "currentPrice": 24.99
       },
       "category": "sensor",
-      "image": "/images/devices/water-leak-sensor.jpg"
+      "image": "/images/devices/wyze-sense-leak-sensor-probe-wyze-labs-inc-white.webp",
+      "variants": [
+        {
+          "id": "wyze-leak-sensor-white",
+          "title": "White",
+          "image": "/images/devices/wyze-sense-leak-sensor-probe-wyze-labs-inc-white.webp"
+        }
+      ]
     },
     {
-      "id": "smoke-co-detector",
-      "name": "Smoke & CO Detector",
-      "description": "Smart smoke and carbon monoxide detector with self-testing capabilities. Features a built-in siren and mobile alerts.",
+      "id": "wyze-smoke-co-detector",
+      "name": "Wyze Smoke & CO Detector",
+      "description": "Smart smoke and carbon monoxide detector with self-testing capabilities. Features a built-in siren and mobile alerts. Monitors air quality and temperature.",
       "pricing": {
         "currentPrice": 69.99,
         "originalPrice": 89.99
       },
-      "badge": "Safety Essential",
       "category": "protection",
-      "image": "/images/devices/smoke-co-detector.jpg"
+      "image": "/images/devices/ring_smoke_and_co_listener_1500x1500__1.png",
+      "variants": [
+        {
+          "id": "wyze-smoke-co-detector-white",
+          "title": "White",
+          "image": "/images/devices/ring_smoke_and_co_listener_1500x1500__1.png"
+        }
+      ]
     },
     {
-      "id": "panic-button",
-      "name": "Panic Button",
+      "id": "wyze-keypad",
+      "name": "Wyze Keypad",
+      "description": "Wireless keypad for arming and disarming your Wyze Home Monitoring system. Features backlit keys, panic button, and a long-lasting battery.",
+      "pricing": {
+        "currentPrice": 29.99
+      },
+      "category": "protection",
+      "image": "/images/devices/wyze-lock-keypad-wyze-labs-inc-white.png",
+      "variants": [
+        {
+          "id": "wyze-keypad-white",
+          "title": "White",
+          "image": "/images/devices/wyze-lock-keypad-wyze-labs-inc-white.png"
+        }
+      ]
+    },
+    {
+      "id": "wyze-panic-button",
+      "name": "Wyze Panic Button",
       "description": "Emergency panic button for medical alerts or security emergencies. Press once for silent alarm or hold for 3 seconds for full emergency response.",
       "pricing": {
         "currentPrice": 19.99
       },
       "category": "protection",
-      "image": "/images/devices/panic-button.jpg"
+      "image": "/images/devices/panic_button_variant-30326449897561.png",
+      "variants": [
+        {
+          "id": "wyze-panic-button-white",
+          "title": "White",
+          "image": "/images/devices/panic_button_variant-30326449897561.png"
+        }
+      ]
+    },
+    {
+      "id": "wyze-bulb-color",
+      "name": "Wyze Bulb Color",
+      "description": "Smart LED bulb with 16 million colors, dimmable, and voice-controlled. Set schedules, scenes, and automation routines. Works with Alexa and Google Assistant.",
+      "pricing": {
+        "currentPrice": 34.99,
+        "originalPrice": 39.99
+      },
+      "category": "smart-home",
+      "image": "/images/devices/wyze-bulb-color.jpg",
+      "variants": [
+        {
+          "id": "wyze-bulb-color-white",
+          "title": "White",
+          "image": "/images/devices/wyze-bulb-color-white.jpg"
+        }
+      ]
+    },
+    {
+      "id": "wyze-plug-outdoor",
+      "name": "Wyze Plug Outdoor",
+      "description": "Weatherproof outdoor smart plug with two independently controlled outlets. Control outdoor lights and devices remotely with scheduling and voice control.",
+      "pricing": {
+        "currentPrice": 29.99
+      },
+      "category": "smart-home",
+      "image": "/images/devices/wyze-plug-outdoor.jpg",
+      "variants": [
+        {
+          "id": "wyze-plug-outdoor-white",
+          "title": "White",
+          "image": "/images/devices/wyze-plug-outdoor-white.jpg"
+        }
+      ]
+    },
+    {
+      "id": "wyze-thermostat",
+      "name": "Wyze Thermostat",
+      "description": "Smart thermostat with energy-saving features, remote control, and compatibility with most HVAC systems. Save up to 15% on heating and cooling costs.",
+      "pricing": {
+        "currentPrice": 79.99,
+        "originalPrice": 99.99
+      },
+      "category": "smart-home",
+      "image": "/images/devices/wyze-thermostat.jpg",
+      "variants": [
+        {
+          "id": "wyze-thermostat-white",
+          "title": "White",
+          "image": "/images/devices/wyze-thermostat-white.jpg"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "camera",
+      "name": "Cameras",
+      "icon": "camera",
+      "count": 5,
+      "devices": [
+        "wyze-battery-cam-pro",
+        "wyze-cam-floodlight-v2",
+        "wyze-cam-pan-v3",
+        "wyze-cam-v4",
+        "wyze-duo-cam-battery-doorbell"
+      ]
+    },
+    {
+      "id": "sensor",
+      "name": "Sensors",
+      "icon": "sensor",
+      "count": 3,
+      "devices": [
+        "wyze-motion-sensor",
+        "wyze-contact-sensor",
+        "wyze-leak-sensor"
+      ]
+    },
+    {
+      "id": "protection",
+      "name": "Safety & Protection",
+      "icon": "shield",
+      "count": 3,
+      "devices": [
+        "wyze-smoke-co-detector",
+        "wyze-keypad",
+        "wyze-panic-button"
+      ]
+    },
+    {
+      "id": "smart-home",
+      "name": "Smart Home",
+      "icon": "smart-home",
+      "count": 3,
+      "devices": [
+        "wyze-bulb-color",
+        "wyze-plug-outdoor",
+        "wyze-thermostat"
+      ]
     }
   ],
   "plans": [
@@ -150,8 +335,7 @@
       "pricing": {
         "currentPrice": 9.99,
         "originalPrice": 14.99
-      },
-      "badge": "Popular"
+      }
     },
     {
       "id": "premium-protection",
@@ -159,8 +343,7 @@
       "description": "All-in-one plan with professional monitoring, 60-day video storage, smart device integration, and priority emergency response.",
       "pricing": {
         "currentPrice": 29.99
-      },
-      "badge": "Best Value"
+      }
     },
     {
       "id": "self-monitoring",
@@ -168,8 +351,153 @@
       "description": "Receive push notifications and control your system from anywhere. No professional monitoring fees. Ideal for DIY security.",
       "pricing": {
         "currentPrice": 0.0
-      },
-      "badge": "Free"
+      }
     }
-  ]
+  ],
+  "homeSetup": {
+    "screens": [
+      {
+        "id": "screen-1",
+        "title": "Choose your home",
+        "subtitle": "Select the home you want to secure",
+        "type": "home-selection",
+        "homes": [
+          "main-home",
+          "beach-house",
+          "mountain-cabin"
+        ],
+        "action": "Continue"
+      },
+      {
+        "id": "screen-2",
+        "title": "Choose your home",
+        "subtitle": "Pick the devices for your home",
+        "type": "device-selection",
+        "categories": [
+          "camera",
+          "sensor",
+          "protection",
+          "smart-home"
+        ],
+        "action": "Add Devices"
+      },
+      {
+        "id": "screen-3",
+        "title": "Choose your home",
+        "subtitle": "Select your monitoring plan",
+        "type": "plan-selection",
+        "plans": [
+          "basic-monitoring",
+          "video-recording-plan",
+          "premium-protection",
+          "self-monitoring"
+        ],
+        "action": "Choose Plan"
+      },
+      {
+        "id": "screen-4",
+        "title": "Choose your home",
+        "subtitle": "Review your security setup",
+        "type": "review",
+        "action": "Complete Setup"
+      }
+    ]
+  },
+  "homes": [
+    {
+      "id": "main-home",
+      "name": "Main Home",
+      "address": "123 Main Street, Anytown, USA",
+      "type": "house",
+      "isActive": true,
+      "image": "/images/homes/main-home.jpg",
+      "devices": [
+        "wyze-battery-cam-pro",
+        "wyze-cam-v4",
+        "wyze-cam-pan-v3",
+        "wyze-motion-sensor",
+        "wyze-contact-sensor",
+        "wyze-smoke-co-detector",
+        "wyze-thermostat"
+      ],
+      "plan": "premium-protection",
+      "status": {
+        "totalDevices": 7,
+        "online": 7,
+        "alertsToday": 0
+      }
+    },
+    {
+      "id": "beach-house",
+      "name": "Beach House",
+      "address": "456 Ocean Drive, Coastal City, USA",
+      "type": "vacation",
+      "isActive": false,
+      "image": "/images/homes/beach-house.jpg",
+      "devices": [
+        "wyze-cam-floodlight-v2",
+        "wyze-duo-cam-battery-doorbell",
+        "wyze-leak-sensor",
+        "wyze-plug-outdoor"
+      ],
+      "plan": "basic-monitoring",
+      "status": {
+        "totalDevices": 4,
+        "online": 4,
+        "alertsToday": 3
+      }
+    },
+    {
+      "id": "mountain-cabin",
+      "name": "Mountain Cabin",
+      "address": "789 Pine Road, Rocky Mountain, USA",
+      "type": "cabin",
+      "isActive": false,
+      "image": "/images/homes/mountain-cabin.jpg",
+      "devices": [
+        "wyze-cam-v4",
+        "wyze-motion-sensor",
+        "wyze-panic-button",
+        "wyze-keypad"
+      ],
+      "plan": "self-monitoring",
+      "status": {
+        "totalDevices": 4,
+        "online": 4,
+        "alertsToday": 0
+      }
+    }
+  ],
+  "onboarding": {
+    "welcome": {
+      "title": "Let's get started!",
+      "description": "Set up your Wyze smart home security system"
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "title": "Choose your home",
+        "description": "Select or add a home to protect",
+        "icon": "home"
+      },
+      {
+        "id": "step-2",
+        "title": "Choose your home",
+        "description": "Add Wyze cameras and sensors",
+        "icon": "devices"
+      },
+      {
+        "id": "step-3",
+        "title": "Choose your home",
+        "description": "Select a monitoring plan",
+        "icon": "plan"
+      },
+      {
+        "id": "step-4",
+        "title": "Choose your home",
+        "description": "Confirm your setup",
+        "icon": "check"
+      }
+    ]
+  }
 }
