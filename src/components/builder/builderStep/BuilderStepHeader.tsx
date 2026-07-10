@@ -57,11 +57,11 @@ export default function BuilderStepHeader({
             </h2>
           </div>
 
-          {step.description && (
+          {/* {step.description && (
             <p className="mt-1.5 pl-6 text-[13px] leading-5 text-slate-500">
               {step.description}
             </p>
-          )}
+          )} */}
         </div>
 
         <div className="mt-0.5 flex shrink-0 items-center gap-2.5">

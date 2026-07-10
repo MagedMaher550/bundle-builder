@@ -1,6 +1,6 @@
 import type { SecurityDevice, SubscriptionPlan } from "@/types";
 
-import ProductCard from "./ProductCard";
+import ProductCard from "./productCard/ProductCard";
 
 interface ProductLayoutProps {
   products: Array<SecurityDevice | SubscriptionPlan>;
@@ -8,23 +8,9 @@ interface ProductLayoutProps {
 
 export default function ProductLayout({ products }: ProductLayoutProps) {
   return (
-    <div
-      className="
-        flex flex-wrap justify-center gap-4
-        lg:grid lg:grid-cols-5
-      "
-    >
+    <div className="product-grid">
       {products.map((product) => (
-        <div
-          key={product.id}
-          className="
-            w-full
-            sm:w-[calc(50%-0.5rem)]
-            lg:w-auto
-          "
-        >
-          <ProductCard product={product} />
-        </div>
+        <ProductCard key={product.id} product={product} />
       ))}
     </div>
   );
