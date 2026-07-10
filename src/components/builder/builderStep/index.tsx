@@ -17,7 +17,7 @@ export default function BuilderStep({
   onToggle,
 }: BuilderStepProps) {
   return (
-    <>
+    <section>
       <BuilderStepHeader step={step} expanded={expanded} onToggle={onToggle} />
 
       <div
@@ -31,6 +31,6 @@ export default function BuilderStep({
           <BuilderStepContent step={step} />
         </div>
       </div>
-    </>
+    </section>
   );
 }

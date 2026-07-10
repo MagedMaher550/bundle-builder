@@ -8,9 +8,21 @@ interface ProductLayoutProps {
 
 export default function ProductLayout({ products }: ProductLayoutProps) {
   return (
-    <div className="product-grid">
+    <div
+      className="
+        flex flex-wrap justify-center gap-4
+        lg:grid lg:grid-cols-5
+      "
+    >
       {products.map((product) => (
-        <div key={product.id} className="min-w-0">
+        <div
+          key={product.id}
+          className="
+            w-full
+            sm:w-[calc(50%-0.5rem)]
+            lg:w-auto
+          "
+        >
           <ProductCard product={product} />
         </div>
       ))}

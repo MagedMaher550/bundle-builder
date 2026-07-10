@@ -30,8 +30,11 @@ const updateBundle = (
     ...updates,
 });
 
-const clampStep = (step: number) =>
-    Math.max(FIRST_STEP, Math.min(step, LAST_STEP));
+const clampStep = (step: number) => {
+    if (step === -1) return -1;
+
+    return Math.max(FIRST_STEP, Math.min(step, LAST_STEP));
+};
 
 export interface BundleStore {
     bundle: Bundle;

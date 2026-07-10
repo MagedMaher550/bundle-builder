@@ -62,9 +62,8 @@ export default function ReviewPanel() {
 
   return (
     <>
-      {/* Desktop/Laptop/Tablet full review (until true mobile) */}
-      <div className="hidden md:block">
-        <aside className="overflow-hidden rounded-2xl border border-slate-200/70 bg-white shadow-[0_6px_18px_rgba(15,23,42,0.05)]">
+      <div className="review-full">
+        <aside className="overflow-hidden rounded-2xl border border-slate-200/70 bg-white shadow-[0_10px_26px_rgba(15,23,42,0.045)]">
           <div className="p-5">
             <h2 className="text-[14px] font-semibold leading-5 text-slate-900">
               Your security system
@@ -74,7 +73,7 @@ export default function ReviewPanel() {
             </p>
           </div>
 
-          <div className="border-t border-slate-200/70 bg-[#F6FAFF] p-5">
+          <div className="review-panel-body border-t border-slate-200/70 bg-[#F6FAFF]">
             <div className="rounded-2xl bg-white p-4 shadow-[0_8px_20px_rgba(15,23,42,0.06)]">
               <div className="flex items-center justify-between gap-3">
                 <img
@@ -208,9 +207,8 @@ export default function ReviewPanel() {
         </aside>
       </div>
 
-      {/* Mobile: compact sticky checkout summary only */}
-      <div className="md:hidden">
-        <div className="pointer-events-none fixed inset-x-0 bottom-0 z-50 px-4 pb-4">
+      <div className="review-compact">
+        <div className="pointer-events-none fixed inset-x-0 bottom-0 z-50 px-3 pb-3">
           <div className="pointer-events-auto overflow-hidden rounded-2xl border border-slate-200/70 bg-white shadow-[0_12px_30px_rgba(15,23,42,0.10)]">
             <div className="flex items-center gap-3 p-3">
               <div className="min-w-0 flex-1">

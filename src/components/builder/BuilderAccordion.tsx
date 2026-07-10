@@ -1,5 +1,3 @@
-import { Fragment } from "react";
-
 import { BUILDER_STEPS } from "@/config/builder";
 import { useBundle } from "@/hooks/useBundle";
 
@@ -8,20 +6,19 @@ import BuilderStep from "./builderStep";
 export default function BuilderAccordion() {
   const { currentStep, setCurrentStep } = useBundle();
 
-  return (
-    <div className="overflow-hidden rounded-2xl border border-slate-200/70 bg-white shadow-[0_6px_18px_rgba(15,23,42,0.05)]">
-      {BUILDER_STEPS.map((step, index) => (
-        <Fragment key={step.id}>
-          <BuilderStep
-            step={step}
-            expanded={currentStep === step.id}
-            onToggle={() => setCurrentStep(step.id)}
-          />
+  const onToggleHandler = (stepId: number) => {
+    setCurrentStep(currentStep === stepId ? -1 : stepId);
+  };
 
-          {index < BUILDER_STEPS.length - 1 && (
-            <div className="border-b border-slate-200/70" />
-          )}
-        </Fragment>
+  return (
+    <div className="builder-accordion overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-[0_10px_26px_rgba(15,23,42,0.045)]">
+      {BUILDER_STEPS.map((step) => (
+        <BuilderStep
+          key={step.id}
+          step={step}
+          expanded={currentStep === step.id}
+          onToggle={() => onToggleHandler(step.id)}
+        />
       ))}
     </div>
   );
