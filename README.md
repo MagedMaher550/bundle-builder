@@ -1,75 +1,189 @@
-# React + TypeScript + Vite
+# Bundle Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A production-oriented frontend take-home assignment built with **React**, **TypeScript**, and **Vite**.
 
-Currently, two official plugins are available:
+The application allows users to build a customizable smart home security system through a multi-step bundle builder with a live review panel, product variants, quantity management, and local persistence.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS v4
+- Zustand
+- Lucide React
+- clsx
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Multi-step bundle builder
+- Data-driven architecture using JSON
+- Product categories
+- Product variants
+- Quantity management
+- Live pricing updates
+- Save system locally
+- Responsive layout
+- Modular component architecture
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Project Structure
+
+```
+src
+├── assets
+├── components
+├── data
+├── hooks
+├── store
+├── styles
+├── types
+└── utils
 
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Install dependencies
+
+```bash
+yarn
+```
+
+### Generate the catalog
+
+```bash
+yarn seed
+```
+
+This generates:
 
 ```
+src/data/catalog.json
+```
+
+### Start development
+
+```bash
+yarn dev
+```
+
+### Build production
+
+```bash
+yarn build
+```
+
+---
+
+## Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `yarn dev` | Start development server |
+| `yarn build` | Build production bundle |
+| `yarn preview` | Preview production build |
+| `yarn lint` | Run ESLint |
+
+---
+
+## Architecture
+
+The application follows a **domain-first architecture**.
+
+The UI is built on top of a normalized data model instead of embedding business logic inside React components.
+
+### Static Data
+
+The catalog is generated through seeders and stored as JSON.
+
+```
+Catalog
+├── Categories
+└── Products
+```
+
+### Dynamic Data
+
+User interactions are managed with Zustand.
+
+```
+Bundle
+└── Bundle Items
+```
+
+The catalog remains immutable while all user selections are stored in the application state.
+
+---
+
+## Data Model
+
+### Category
+
+- id
+- title
+- order
+
+### Product
+
+- id
+- categoryId
+- name
+- description
+- image
+- pricing
+- variants (optional)
+- badge (optional)
+
+### Bundle Item
+
+- productId
+- variantId (optional)
+- quantity
+
+---
+
+## Design Decisions
+
+- Domain-driven architecture
+- Data generated through seeders
+- JSON used as the application data source
+- Single source of truth for product/category relationships
+- Derived pricing and totals
+- Immutable catalog
+- Component-based architecture
+- Responsive-first implementation
+
+---
+
+## Assumptions
+
+- Product catalog is generated locally through the seeder.
+- Images are treated as static assets.
+- Totals are calculated on the client.
+- Local persistence uses browser localStorage.
+
+---
+
+## Future Improvements
+
+- Backend integration
+- Authentication
+- Remote catalog API
+- Inventory management
+- Promotions engine
+- Internationalization
+- Unit and integration testing
+
+---
+
+## Author
+
+Maged Maher
