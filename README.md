@@ -57,18 +57,6 @@ src
 yarn
 ```
 
-### Generate the catalog
-
-```bash
-yarn seed
-```
-
-This generates:
-
-```
-src/data/catalog.json
-```
-
 ### Start development
 
 ```bash
