@@ -6,7 +6,6 @@ import { getPricingInfo } from "@/utils/pricing";
 import type { SecurityDevice, SubscriptionPlan } from "@/types";
 
 import ProductCardDesktop from "./ProductCardDesktop";
-import ProductCardTablet from "./ProductCardTablet";
 
 interface ProductCardProps {
   product: SecurityDevice | SubscriptionPlan;
@@ -80,16 +79,8 @@ export default function ProductCard({ product }: ProductCardProps) {
   };
 
   return (
-    <>
-      {/* Desktop + Mobile */}
-      <div className="block min-[640px]:hidden min-[1024px]:block">
-        <ProductCardDesktop {...sharedProps} />
-      </div>
-
-      {/* Tablet */}
-      <div className="hidden min-[640px]:block min-[1024px]:hidden">
-        <ProductCardTablet {...sharedProps} />
-      </div>
-    </>
+    <div className="h-full">
+      <ProductCardDesktop {...sharedProps} />
+    </div>
   );
 }

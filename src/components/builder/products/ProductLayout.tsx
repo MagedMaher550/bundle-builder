@@ -8,7 +8,7 @@ interface ProductLayoutProps {
 
 export default function ProductLayout({ products }: ProductLayoutProps) {
   return (
-    <div className="product-grid">
+    <div className="product-grid auto-rows-fr">
       {products.map((product) => (
         <ProductCard key={product.id} product={product} />
       ))}

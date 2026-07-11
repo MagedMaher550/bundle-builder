@@ -16,8 +16,7 @@ export default function BuilderAccordion() {
         <BuilderStep
           key={step.id}
           step={step}
-          expanded={true}
-          // expanded={currentStep === step.id}
+          expanded={currentStep === step.id}
           onToggle={() => onToggleHandler(step.id)}
         />
       ))}

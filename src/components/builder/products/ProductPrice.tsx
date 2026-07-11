@@ -14,7 +14,13 @@ export default function ProductPrice({
   hasDiscount,
 }: ProductPriceProps) {
   return (
-    <div className="flex flex-col items-end gap-0.5 whitespace-nowrap lg:flex-row lg:items-center lg:gap-1">
+    <div
+      className={
+        isDevice
+          ? "flex flex-col items-end gap-0.5 whitespace-nowrap lg:flex-row lg:items-center lg:gap-1"
+          : "flex flex-col items-end gap-0.5 whitespace-nowrap"
+      }
+    >
       {hasDiscount && originalPrice && (
         <span className="text-[13px] font-normal leading-none tracking-[0.5px] text-[#D8392B] line-through">
           {formatMoney(originalPrice)}

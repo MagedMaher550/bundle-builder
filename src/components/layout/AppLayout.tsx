@@ -15,7 +15,7 @@ export function AppLayout({ children }: AppLayoutProps) {
             {builder}
           </section>
 
-          <aside className="min-w-0 shrink-0 md:max-lg:sticky md:max-lg:top-5">
+          <aside className="mt-6 min-w-0 shrink-0 rounded-xl md:max-lg:sticky md:max-lg:top-5 md:max-lg:mt-0">
             {review}
           </aside>
         </div>
