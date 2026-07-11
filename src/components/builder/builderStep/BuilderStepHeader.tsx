@@ -1,7 +1,9 @@
 import clsx from "clsx";
 import type { BuilderStep as BuilderStepType } from "@/config/builder";
 import { useBundle } from "@/hooks/useBundle";
-import { Camera, ClipboardList, Cpu, Shield, ChevronDown } from "lucide-react";
+import { Camera, ClipboardList, Cpu, Shield } from "lucide-react";
+import ChevronDown from "@/assets/icons/ChevronDown";
+import StepSeparator from "./StepSeparator";
 
 interface BuilderStepHeaderProps {
   step: BuilderStepType;
@@ -44,7 +46,7 @@ export default function BuilderStepHeader({
       </div>
 
       {/* Divider */}
-      <div className="mt-2 border-t border-slate-200" />
+      <StepSeparator marginTop={5} marginBottom={21} />
 
       {/* Header */}
       <div className="mt-3 flex items-start justify-between gap-4">
@@ -55,14 +57,11 @@ export default function BuilderStepHeader({
             <h2 className="truncate text-[17px] font-semibold leading-none text-slate-900">
               {step.title}
             </h2>
+            <StepSeparator />
+            
           </div>
-
-          {/* {step.description && (
-            <p className="mt-1.5 pl-6 text-[13px] leading-5 text-slate-500">
-              {step.description}
-            </p>
-          )} */}
         </div>
+        
 
         <div className="mt-0.5 flex shrink-0 items-center gap-2.5">
           {selectedCount > 0 && (
@@ -72,15 +71,15 @@ export default function BuilderStepHeader({
           )}
 
           <ChevronDown
-            size={16}
-            strokeWidth={2}
             className={clsx(
               "text-slate-400 transition-transform duration-200",
               expanded && "rotate-180",
             )}
           />
         </div>
+        
       </div>
+      <StepSeparator marginTop={21} />
     </button>
   );
 }

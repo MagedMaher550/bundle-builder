@@ -7,7 +7,7 @@ export default function StepSeparator({
 }) {
   return (
     <div
-      className="border-t border-slate-200"
+      className="border-t border-slate-400"
       style={{
         marginTop,
         marginBottom,
