@@ -30,7 +30,7 @@ button:disabled {
 
 .app-shell {
   max-width: 1440px;
-  padding: 28px 52px;
+  padding: 28px 12.5px;
 }
 
 /* Default (Desktop ≥1024px) */
@@ -345,3 +345,9 @@ button:disabled {
     height: 92px;
   }
 }
+
+/* @media (min-width: 640px) and (max-width: 1023px) {
+  .product-grid {
+    align-items: stretch;
+  }
+} */

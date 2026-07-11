@@ -42,12 +42,12 @@ export default function ProductCardTablet({
       )}
 
       <div className="flex gap-3">
-        <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-lg bg-[#F3F7FF]">
+        <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-lg bg-[#F3F7FF] p-2">
           {mainImage ? (
             <img
               src={mainImage}
               alt={product.name}
-              className="max-h-16 object-contain"
+              className="h-full w-full object-contain"
             />
           ) : (
             <DeviceGlyph className="h-7 w-7 text-slate-400" />
